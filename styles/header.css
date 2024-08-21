@@ -1,0 +1,189 @@
+
+
+.cabecalho_menu{
+    width: 30px;
+    height: 60px;
+    background-image: url("../header/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display:inline-block;
+    margin: 1em 1em;
+    
+}
+
+
+.cabecalho{
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    margin-left: 10px;
+}
+.icones{
+    gap: 0px;
+}
+
+.container__img{
+    margin: 0 11px;
+    width: 2rem;
+    
+}
+
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container_botao{
+    display: none;
+}
+
+.container_botao:checked ~ .lista-menu{
+    display: block;
+
+}
+
+.titulo{
+   color: var(--cor-laranja);
+   font-weight: 700px;
+   font-family: "Poppins";
+   font-weight: 700;
+   
+}
+
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--cor-branco);
+    
+}
+
+.lista-menu_link{
+    background: var(--cor-azul);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container_alura{
+    display: none;
+}
+
+.cabecalho_tablet{
+    display: none;
+
+}
+
+.opções{
+    display: none;
+}
+
+.carrinho{
+    display: none;
+}
+
+.perfil{
+    display: none;
+}
+
+
+@media screen and (min-width: 769px) {
+    .cabecalho_menu{
+        background-image: none;
+        width: 30px;
+        height: 40px;
+        margin: 1em 1em;
+        
+    }
+    .container_alura,
+    .container_alura--negrito{
+        font-size: 20px; 
+        font-family: var(--fonte-alura);
+    }
+
+    .container_alura{
+        font-weight: 400;
+        display: block;
+    }
+
+    .container_alura--negrito{
+        font-weight: 700;
+    }
+
+    .favo{
+        display: none;
+    }
+
+    .icones{
+        gap: 20px;
+        padding: 0 1em;
+    }
+
+    
+    .opções{
+        display: flex;
+        gap: 25px;
+        font-size: 16px;
+    }
+
+    .opções__item{
+        color: black;
+    }
+
+    .opções__link{
+        text-decoration: none;
+        color: black;
+    }
+
+    .opcoes_container{
+        display: none;
+    }
+    .opcoes_container:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+
+        .container_links{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .carrinho{
+            display: flex;
+        }
+        
+        .perfil{
+            display: flex;
+        }
+
+        .opções__item{
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+
+
+
+
+}
+
